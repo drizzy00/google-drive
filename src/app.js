@@ -1084,7 +1084,7 @@ function onSearchResultItemClick(file_id, can_preview) {
 		.catch(function(error) {
 			console.log(error);
 			var link = ""
-			title = `Fallback Method`;
+			title = `Go to result`;
 			$('#SearchModelLabel').html(title);
 			content = `<a class="btn btn-info" href="/fallback?id=${file_id}&${can_preview ? 'a=view' : ''}">Open</a> <a class="btn btn-secondary" href="/fallback?id=${file_id}&${can_preview ? 'a=view' : ''}" target="_blank">Open in New Tab</a>`;
 			$('#modal-body-space').html(content);
